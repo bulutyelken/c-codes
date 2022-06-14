@@ -5,10 +5,9 @@
 #define LINE_RANGE 300
 
 int main(int argc,char **argv){
-    if((strcmp(argv[1],"-h") || strcmp(argv[1],"--help")) && (argc == 2)){ // usage info
-        printf(
-            "Usage:  ./grepinfo [FILE] [WORD] \n"
-            "Example: ./grepinfo elonmusk.txt starlink\n\n");
+    if (strcmp(argv[1], "-h")==0||strcmp(argv[1], "--help")==0)
+    {
+        printf("Usage: <program name> <file> <word>\n");
         return EXIT_SUCCESS;
     }
 
